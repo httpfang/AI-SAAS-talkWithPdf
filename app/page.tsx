@@ -35,7 +35,13 @@ const features = [
     name: "store your pdf doc",
     description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi laudantium culpa debitis eum explicabo numquam esse magni dolore est?",
     Icon: GlobeIcon
-  }
+  },
+  {
+    name: "store your pdf doc",
+    description: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum quasi laudantium culpa debitis eum explicabo numquam esse magni dolore est?",
+    Icon: GlobeIcon
+  },
+  // other features...
 ];
 
 export default function Home() {
@@ -44,18 +50,25 @@ export default function Home() {
       <div className="bg-white py-24 sm:py-32 rounded-md drop-shadow-xl">
         <div className="flex flex-col justify-center items-center mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl sm:text-center">
-            <h2 className="capitalize text-base font-semibold leading-7 text-indigo-600">Your interactive Document companion</h2>
-            <p className="capitalize mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">Transform your PDF into interactive conversations</p>
+            <h2 className="capitalize text-base font-semibold leading-7 text-indigo-600">
+              Your interactive Document companion
+            </h2>
+            <p className="capitalize mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+              Transform your PDF into interactive conversations
+            </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               Introducing{" "}
-              <span className="font-bold text-indigo-600 capitalize">Chat with PDF</span>
+              <span className="font-bold text-indigo-600 capitalize">
+                Chat with PDF
+              </span>
               <br />
-              <br /> Upload your document, and our chatbot will answer questions, summarize content, and answer all your questions. Ideal for everyone, <span className="text-indigo-600"> 
-                Chat with PDF 
-                </span>{" "} 
-                turns static documents into{" "}
-                 <span className="font-bold">dynamic conversations</span>, 
-                 enhancing productivity 10x fold effortlessly.
+              <br /> Upload your document, and our chatbot will answer
+              questions, summarize content, and answer all your questions. Ideal
+              for everyone,{" "}
+              <span className="text-indigo-600">Chat with PDF</span> turns
+              static documents into{" "}
+              <span className="font-bold">dynamic conversations</span>,
+              enhancing productivity 10x fold effortlessly.
             </p>
           </div>
 
@@ -88,9 +101,7 @@ export default function Home() {
                   />
                   {feature.name}
                 </dt>
-                <dd className="mt-2 text-gray-600">
-                  {feature.description}
-                </dd>
+                <dd className="mt-2 text-gray-600">{feature.description}</dd>
               </div>
             ))}
           </dl>
